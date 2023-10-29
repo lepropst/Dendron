@@ -1,0 +1,8 @@
+// Inserting G into the tree
+digraph {
+	N
+	A
+	N -> A
+	R
+	N -> R
+}

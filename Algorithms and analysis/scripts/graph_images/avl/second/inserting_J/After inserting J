@@ -1,0 +1,20 @@
+// After inserting J
+digraph {
+	L
+	I
+	L -> I
+	E
+	I -> E
+	A
+	E -> A
+	G
+	E -> G
+	J
+	I -> J
+	S
+	L -> S
+	R
+	S -> R
+	N
+	R -> N
+}

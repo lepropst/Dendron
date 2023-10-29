@@ -1,0 +1,8 @@
+// after_lrotate I
+digraph {
+	I
+	E
+	I -> E
+	L
+	I -> L
+}

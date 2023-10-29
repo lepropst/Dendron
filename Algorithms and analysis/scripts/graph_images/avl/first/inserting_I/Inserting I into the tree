@@ -1,0 +1,14 @@
+// Inserting I into the tree
+digraph {
+	G
+	A
+	G -> A
+	E
+	A -> E
+	N
+	G -> N
+	L
+	N -> L
+	R
+	N -> R
+}

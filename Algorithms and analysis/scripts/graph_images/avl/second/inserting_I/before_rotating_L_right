@@ -1,0 +1,6 @@
+// before_rotating_L_right
+digraph {
+	L
+	I
+	L -> I
+}

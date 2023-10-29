@@ -1,0 +1,6 @@
+// After inserting L
+digraph {
+	E
+	L
+	E -> L
+}

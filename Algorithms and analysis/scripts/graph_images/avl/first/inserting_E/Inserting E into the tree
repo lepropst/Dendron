@@ -1,0 +1,10 @@
+// Inserting E into the tree
+digraph {
+	N
+	A
+	N -> A
+	G
+	A -> G
+	R
+	N -> R
+}

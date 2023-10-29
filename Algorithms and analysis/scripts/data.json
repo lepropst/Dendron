@@ -1,0 +1,9 @@
+{
+  "data": {
+    "array_1": ["E", "L", "I", "A", "S", "R", "N", "G", "J"],
+    "array_2": ["R","A", "N", "G", "E", "L", "I", "S", "J"]
+  }
+  ,
+  "data_array":["E", "L", "I", "A", "S", "R", "N", "G", "J"],
+  "data_delete_array":["E", "I", "S"]
+}
