@@ -1,0 +1,18 @@
+// Deleting N
+digraph {
+	N
+	G
+	N -> G
+	A
+	G -> A
+	E
+	A -> E
+	I
+	G -> I
+	J
+	I -> J
+	R
+	N -> R
+	S
+	R -> S
+}

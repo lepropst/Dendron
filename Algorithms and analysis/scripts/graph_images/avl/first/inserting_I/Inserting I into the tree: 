@@ -1,0 +1,6 @@
+// Inserting I into the tree: 
+digraph {
+	E
+	L
+	E -> L
+}

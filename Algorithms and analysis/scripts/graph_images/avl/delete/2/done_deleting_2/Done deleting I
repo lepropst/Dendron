@@ -1,0 +1,14 @@
+// Done deleting I
+digraph {
+	I
+	A
+	I -> A
+	E
+	A -> E
+	R
+	I -> R
+	J
+	R -> J
+	S
+	R -> S
+}

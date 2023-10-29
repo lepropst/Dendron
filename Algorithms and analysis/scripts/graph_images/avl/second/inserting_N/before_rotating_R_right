@@ -1,0 +1,8 @@
+// before_rotating_R_right
+digraph {
+	R
+	N
+	R -> N
+	A
+	N -> A
+}

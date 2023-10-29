@@ -1,0 +1,18 @@
+// After inserting S
+digraph {
+	G
+	A
+	G -> A
+	E
+	A -> E
+	N
+	G -> N
+	L
+	N -> L
+	I
+	L -> I
+	R
+	N -> R
+	S
+	R -> S
+}

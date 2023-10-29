@@ -1,0 +1,8 @@
+// After inserting N
+digraph {
+	R
+	A
+	R -> A
+	N
+	A -> N
+}

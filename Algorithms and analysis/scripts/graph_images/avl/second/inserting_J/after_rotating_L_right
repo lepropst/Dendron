@@ -1,0 +1,14 @@
+// after_rotating_L_right
+digraph {
+	L
+	I
+	L -> I
+	J
+	I -> J
+	N
+	L -> N
+	R
+	N -> R
+	S
+	R -> S
+}

@@ -1,0 +1,20 @@
+Inserting {i} into the tree: 
+Inserting {i} into the tree: 
+Inserting {i} into the tree: 
+Inserting {i} into the tree: 
+Inserting {i} into the tree: 
+Inserting {i} into the tree: 
+Inserting {i} into the tree: 
+Inserting {i} into the tree: 
+Inserting {i} into the tree: 
+Inserting R into the tree: 
+Inserting A into the tree: 
+Inserting N into the tree: 
+Inserting G into the tree: 
+Inserting E into the tree: 
+Inserting L into the tree: 
+Inserting I into the tree: 
+Inserting S into the tree: 
+Inserting J into the tree: 
+Inorder traversal: ['A', 'E', 'G', 'I', 'J', 'L', 'N', 'R', 'S']
+Postorder traversal: ['A', 'E', 'G', 'I', 'J', 'N', 'R', 'S', 'L']

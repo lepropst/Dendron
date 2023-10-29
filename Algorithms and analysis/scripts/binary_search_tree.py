@@ -104,30 +104,5 @@ class BSTNode:
 				add_nodes_edges(node.right)
 
 		add_nodes_edges(self)
-		dot.render(string, view=True, format='png')
+		dot.render(string, view=True, format='png', directory="./graph_images/binary-search-tree")
 
-
-def main():
-
-	bst = BSTNode()
-	items = [ 58, 72, 26, 39, 31, 79, 88, 63, 42, 15, 81]
-	for itm in items:
-		bst.insert(itm)
-	bst.print_tree("Question 8 tree")
-	ord
-	# bst.delete(24)
-	# bst.print_tree("deleted 24")
-	# bst.delete(73)
-	# bst.print_tree("deleted 73")
-	# bst.delete(34)
-	# bst.print_tree("deleted 34")
-	# bst.delete(65)
-	# bst.print_tree("deleted 65")
-	# bst.delete(55)
-	# bst.print_tree("deleted 55")
-
-
-# 24, 73, 34, 65, 55
-
-if __name__ == "__main__":
-	main()

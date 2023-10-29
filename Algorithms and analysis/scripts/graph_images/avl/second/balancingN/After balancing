@@ -1,0 +1,8 @@
+// After balancing
+digraph {
+	N
+	A
+	N -> A
+	R
+	N -> R
+}

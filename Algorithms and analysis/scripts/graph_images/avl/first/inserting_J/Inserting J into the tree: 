@@ -1,0 +1,18 @@
+// Inserting J into the tree: 
+digraph {
+	L
+	I
+	L -> I
+	E
+	I -> E
+	A
+	E -> A
+	G
+	E -> G
+	S
+	L -> S
+	R
+	S -> R
+	N
+	R -> N
+}
