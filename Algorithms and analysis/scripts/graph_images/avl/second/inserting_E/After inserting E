@@ -1,12 +1,4 @@
 // After inserting E
 digraph {
-	N
-	A
-	N -> A
-	G
-	A -> G
 	E
-	G -> E
-	R
-	N -> R
 }

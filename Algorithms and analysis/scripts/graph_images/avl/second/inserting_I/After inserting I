@@ -1,16 +1,8 @@
 // After inserting I
 digraph {
-	G
-	A
-	G -> A
 	E
-	A -> E
-	N
-	G -> N
 	L
-	N -> L
+	E -> L
 	I
 	L -> I
-	R
-	N -> R
 }

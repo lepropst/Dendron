@@ -1,6 +1,0 @@
-// After balancing
-digraph {
-	E
-	L
-	E -> L
-}

@@ -1,6 +1,0 @@
-// Inserting N into the tree: 
-digraph {
-	R
-	A
-	R -> A
-}

@@ -1,6 +1,0 @@
-// After inserting L into the tree: 
-digraph {
-	E
-	L
-	E -> L
-}

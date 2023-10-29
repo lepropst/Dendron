@@ -1,0 +1,6 @@
+// J/before_insert
+digraph {
+	I
+	G
+	I -> G
+}

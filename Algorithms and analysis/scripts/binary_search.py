@@ -3,7 +3,7 @@ def binary_search(arr, low, high, x):
     # Check base case
     if high >= low:
  
-        mid = (high + lows) // 2
+        mid = (high + low) // 2
         print(f"HIGH: {high}\tLOW: {low}\tMID: {mid}\tTarget: {x}")
         # If element is present at the middle itself
         if arr[mid] == x:

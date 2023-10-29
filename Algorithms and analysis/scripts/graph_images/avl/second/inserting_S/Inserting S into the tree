@@ -1,0 +1,10 @@
+// Inserting S into the tree
+digraph {
+	I
+	E
+	I -> E
+	A
+	E -> A
+	L
+	I -> L
+}

@@ -1,18 +1,12 @@
 // After inserting S
 digraph {
-	G
-	A
-	G -> A
-	E
-	A -> E
-	N
-	G -> N
-	L
-	N -> L
 	I
-	L -> I
-	R
-	N -> R
+	E
+	I -> E
+	A
+	E -> A
+	L
+	I -> L
 	S
-	R -> S
+	L -> S
 }

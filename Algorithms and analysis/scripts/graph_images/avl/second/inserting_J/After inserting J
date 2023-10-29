@@ -1,20 +1,20 @@
 // After inserting J
 digraph {
-	G
-	A
-	G -> A
-	E
-	A -> E
-	N
-	G -> N
 	L
-	N -> L
 	I
 	L -> I
+	E
+	I -> E
+	A
+	E -> A
+	G
+	E -> G
 	J
 	I -> J
-	R
-	N -> R
 	S
-	R -> S
+	L -> S
+	R
+	S -> R
+	N
+	R -> N
 }

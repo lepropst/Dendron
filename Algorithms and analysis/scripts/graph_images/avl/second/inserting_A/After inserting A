@@ -1,6 +1,10 @@
 // After inserting A
 digraph {
-	R
+	I
+	E
+	I -> E
 	A
-	R -> A
+	E -> A
+	L
+	I -> L
 }

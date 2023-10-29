@@ -1,5 +1,4 @@
 def printArray(arr, n):
- 
     # Iterating and printing the array
     for i in range(n):
         print(arr[i], end=" ")
@@ -7,56 +6,61 @@ def printArray(arr, n):
 # Function to implement the
 # quadratic probing
  
- 
-def hashing(table, tsize, arr, N):
- 
-    # Iterating through the array
-    for i in range(N):
 
-        # Computing the hash value
-        hv = arr[i] % tsize
- 
-        # Insert in the table if there
-        # is no collision
-        if (table[hv] == -1):
-            table[hv] = arr[i]
-
-            print()
 
  
-        else:
-            # If there is a collision
-            # iterating through all
-            # possible quadratic values
-            for j in range(tsize):
- 
-                # Computing the new hash value
-                t = (hv + j * j) % tsize
-                if (table[t] == -1):
-                    # Break the loop after
-                    # inserting the value
-                    # in the table
+class HashTable:
+    def __init__(self, size,modulo):
+        self.size = size
+        self.hash_modulo = modulo
+        self.hash_table = [0] * size
+        for i in range(size):
+            self.hash_table[i] = -1
 
-                    table[t] = arr[i]
-                    break
-                else:
-                    continue
-    printArray(table, tsize)
-    
- 
- 
+
+    def printArray(self):
+        # Iterating and printing the array
+        for i in range(self.size):
+            print(f"{self.hash_table[i]} {i}", end="\n")
+    def hash(self, arr): 
+        print(arr)
+        # Iterating through the array
+        for i in range(len(arr)):
+            # Computing the hash value
+            hv =i % self.size
+            # Insert in the table if there
+            # is no collision
+            if (self.hash_table[hv] == -1):
+
+                self.hash_table[hv] = arr[i]
+            else:
+                # If there is a collision
+                # iterating through all
+                # possible quadratic values
+                for j in range(self.size):
+                    # Computing the new hash value
+                    t = (hv + j * j) % self.size
+                    if (self.hash_table[t] == -1):
+                        # Break the loop after
+                        # inserting the value
+                        # in the self.hash_table
+                        self.hash_table[t] = arr[i]
+                        break
+                    else:
+                        continue
+        self.printArray()
 # Driver code
-if __name__ == "__main__":
-    arr = [29, 31, 22, 44, 45]
-    N = 5
+# if __name__ == "__main__":
+#     arr = [29, 31, 22, 44, 45]
+#     N = 5
  
-    # Size of the hash table
-    L = 15
-    hash_table = [0] * L
+#     # Size of the hash table
+#     L = 15
+#     hash_table = [0] * L
  
-    # Initializing the hash table
-    for i in range(L):
-        hash_table[i] = -1
+#     # Initializing the hash table
+#     for i in range(L):
+#         hash_table[i] = -1
  
-    # Function call
-    hashing(hash_table, L, arr, N)
+#     # Function call
+#     hashing(hash_table, L, arr, N)

@@ -1,8 +1,0 @@
-// Inserting A into the tree: 
-digraph {
-	I
-	E
-	I -> E
-	L
-	I -> L
-}

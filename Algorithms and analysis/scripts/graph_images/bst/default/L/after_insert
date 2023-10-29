@@ -1,0 +1,6 @@
+// L/after_insert
+digraph {
+	E
+	L
+	E -> L
+}

@@ -1,0 +1,20 @@
+// final_tree
+digraph {
+	E
+	A
+	E -> A
+	L
+	E -> L
+	I
+	L -> I
+	G
+	I -> G
+	J
+	I -> J
+	S
+	L -> S
+	R
+	S -> R
+	N
+	R -> N
+}

@@ -7,24 +7,8 @@ class BSTNode:
 		self.right = None
 		self.val = val
 
-	def print_tree(self):
-		dot = graphviz.Digraph()
-		dot.node(str(self.val))
-
-		def add_nodes_edges(node):
-			if node.left:
-				dot.node(str(node.left.val))
-				dot.edge(str(node.val), str(node.left.val))
-				add_nodes_edges(node.left)
-			if node.right:
-				dot.node(str(node.right.val))
-				dot.edge(str(node.val), str(node.right.val))
-				add_nodes_edges(node.right)
-
-		add_nodes_edges(self)
-		dot.render('binary_tree', view=True, format='png')
-
 	def insert(self, val):
+		self.print_tree(f"{val}/before_insert")
 		if not self.val:
 			self.val = val
 			return
@@ -40,7 +24,11 @@ class BSTNode:
 			self.right.insert(val)
 			return
 		self.right = BSTNode(val)
+		self.print_tree(f"{val}/after_insert")
+
 	def delete(self, val):
+		self.print_tree(f"{val}/before_delete")
+
 		print(f"deleting {val} using right sub-tree")
 		if self == None:
 			return self
@@ -61,48 +49,76 @@ class BSTNode:
 			min_larger_node = min_larger_node.left
 		self.val = min_larger_node.val
 		self.right = self.right.delete(min_larger_node.val)
+		self.print_tree(f"{val}/after_delete")
+
 		return self
 
-	def inorder(self, vals):
+	def inorder_traverse(self, vals):
 		if self.left is not None:
-			self.left.inorder(vals)
+			self.left.inorder_traverse(vals)
 		if self.val is not None:
 			vals.append(self.val)
 		if self.right is not None:
-			self.right.inorder(vals)
+			self.right.inorder_traverse(vals)
+
 		return vals
-	def preorder(self, vals):
+	
+	def preorder_traverse(self, vals):
 		if self.val is not None:
 			vals.append(self.val)
 		if self.left is not None:
-			self.left.preorder(vals)
+			self.left.preorder_traverse(vals)
 		if self.right is not None:
-			self.right.preorder(vals)
+			self.right.preorder_traverse(vals)
 		return vals
-	def postorder(self, vals):
+	def postorder_traverse(self, vals):
 		if self.left is not None:
-			self.left.postorder(vals)
+			self.left.postorder_traverse(vals)
 		if self.right is not None:
-			self.right.postorder(vals)
+			self.right.postorder_traverse(vals)
 		if self.val is not None:
 			vals.append(self.val)
 		return vals
 
 
-	def print_tree(self, string):
+	# def print_tree(self, string):
+	# 	dot = graphviz.Digraph(comment=string)
+	# 	dot.node(str(self.val))
+
+	# 	def add_nodes_edges(node):
+	# 		if node.left:
+	# 			dot.node(str(node.left.val))
+	# 			dot.edge(str(node.val), str(node.left.val))
+	# 			add_nodes_edges(node.left)
+	# 		if node.right:
+	# 			dot.node(str(node.right.val))
+	# 			dot.edge(str(node.val), str(node.right.val))
+	# 			add_nodes_edges(node.right)
+
+	# 	add_nodes_edges(self)
+	# 	dot.render(string, view=True, format='png', directory="./graph_images/binary-search-tree")
+
+	def print_tree(self,string,dir = "default"):
+
+
 		dot = graphviz.Digraph(comment=string)
+
 		dot.node(str(self.val))
+		accessed_node = self
 
-		def add_nodes_edges(node):
-			if node.left:
-				dot.node(str(node.left.val))
-				dot.edge(str(node.val), str(node.left.val))
-				add_nodes_edges(node.left)
-			if node.right:
-				dot.node(str(node.right.val))
-				dot.edge(str(node.val), str(node.right.val))
-				add_nodes_edges(node.right)
+		def add_nodes_edges(accessed_node):
+			if accessed_node.left:
+				dot.node(str(accessed_node.left.val))
+				dot.edge(str(accessed_node.val), str(
+					accessed_node.left.val))
+				add_nodes_edges(accessed_node.left)
+			if accessed_node.right:
+				dot.node(str(accessed_node.right.val))
+				dot.edge(str(accessed_node.val), str(
+					accessed_node.right.val))
+				add_nodes_edges(accessed_node.right)
 
-		add_nodes_edges(self)
-		dot.render(string, view=True, format='png', directory="./graph_images/binary-search-tree")
+		add_nodes_edges(accessed_node)
+		dot.render(string,  format='png',
+					directory=f"./graph_images/bst/{dir}", view=False)
 
