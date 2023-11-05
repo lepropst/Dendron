@@ -1,0 +1,16 @@
+// after_rotating_G_right
+digraph {
+	G
+	A
+	G -> A
+	E
+	A -> E
+	R
+	G -> R
+	I
+	R -> I
+	J
+	I -> J
+	S
+	R -> S
+}

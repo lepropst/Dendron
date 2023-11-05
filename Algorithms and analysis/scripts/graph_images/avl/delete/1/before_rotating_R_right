@@ -1,0 +1,16 @@
+// before_rotating_R_right
+digraph {
+	R
+	G
+	R -> G
+	A
+	G -> A
+	E
+	A -> E
+	I
+	G -> I
+	J
+	I -> J
+	S
+	R -> S
+}
